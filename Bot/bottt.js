@@ -37,7 +37,7 @@ bot.on('text', function(msg)
     }
  
     if (messageText === 'Yes') {
-        bot.sendMessage(messageChatId, 'I\'m too love you!', { caption: 'I\'m bot!' });
+        bot.sendMessage(messageChatId, 'Thank you!', { caption: 'I\'m bot!' });
     }
  
     if (messageText === 'No') {
