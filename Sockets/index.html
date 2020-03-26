@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Chat program</title>
+    <style>
+        body{background: #c7d3c0;}
+    </style>
+</head>
+<body>
+    <div class="container py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-3">
+            <a class="btn btn-outline-secondary" href="#">Subscribe</a>
+          </div>
+          <div class="col-3 text-center">
+            <a class="blog-header-logo text-dark" href="#">Your own Chat</a>
+          </div>
+          <div class="col-3 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+            </a>
+            <a class="btn btn-outline-secondary" href="#">Sign up</a>
+          </div>
+        </div>
+    </div>
+    <div class="container p-3 p-md-4 text-white rounded-pill bg-info ">
+        <div class="col-md text-center px-0">
+            <h1 class="display-4 font-italic-bold ">Chat program</h1>
+            <p class="lead my-3">Enter your name and start correspondence.</p>
+        </div>
+    </div>
+    <br>
+    <div class="container p-3 p-md-4 text-white rounded-lg bg-dark">
+        <div class="row" >
+            <div class="col-6">
+                <h3>Message form</h3>
+                <form id="messForm">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control">
+                  <br>
+                  <label for="message">Your Message:</label>
+                  <textarea name="message" id="message" class="form-control" placeholder="Text something nice!"></textarea>
+                  <br>
+                  <input type="submit" value="Send" class="btn btn-info btn-block">
+                </form>
+              </div>
+              <div class="col-6">
+                <h3>All Messages</h3>
+                <div id="all_mess"></div>
+              </div>
+
+
+        </div>
+    </div>
+    <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var min = 1;
+        var max = 6;
+        var random = Math.floor(Math.random() * (max - min)) + min;
+
+        var alertClass;
+        switch (random) {
+        case 1:
+            alertClass = 'secondary';
+            break;
+        case 2:
+            alertClass = 'light';
+            break;
+        case 3:
+            alertClass = 'success';
+            break;
+        case 4:
+            alertClass = 'warning';
+            break;
+        case 5:
+            alertClass = 'info';
+            break;
+        case 6:
+            alertClass = 'danger';
+            break;
+        }
+
+        $(function() {
+        var socket = io.connect();
+        var $form = $("#messForm"); 
+        var $name = $("#name"); 
+        var $textarea = $("#message"); 
+        var $all_messages = $("#all_mess"); 
+
+        $form.submit(function(event) {
+            event.preventDefault();
+            socket.emit('send mess', {mess: $textarea.val(), name: $name.val(), className: alertClass});
+            $textarea.val('');
+        });
+
+        socket.on('add mess', function(data) {
+            $all_messages.append("<div class='alert alert-" + data.className + "'><b>" + data.name + "</b>: " + data.mess + "</div>");
+        });
+
+        });
+    </script>
+</body>
+</html>
