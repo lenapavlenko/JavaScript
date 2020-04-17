@@ -8,7 +8,7 @@ const сlient = new MongoClient(url, { useNewUrlParser: true });
 
 osmosis
   .get('https://www.google.co.in/search?q=Data+Mining')
-  .paginate('#foot table tr > td a[href]',3)
+  .paginate('#foot table tr > td a[href]',2)
   .find('#search')
   .find('.g .r')
   .set({
