@@ -1,11 +1,122 @@
 [
     {
-        "Data Mining": [
-            "Задачи Data Mining",
-            "Які науки включені в data mining",
-            "Переваги і недоліки Data Mining",
-            "Text Mining це",
-            "Інструменти Data Mining"
-        ]
+        "Name": "Добування даних — Вікіпедія",
+        "Link": "https://uk.wikipedia.org/wiki/%D0%94%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85"
+    },
+    {
+        "Name": "Data mining — Википедия",
+        "Link": "https://ru.wikipedia.org/wiki/Data_mining"
+    },
+    {
+        "Name": "Data Mining — добыча данных | BaseGroup Labs",
+        "Link": "https://basegroup.ru/community/articles/data-mining"
+    },
+    {
+        "Name": "Что такое data mining? - MAD Data",
+        "Link": "https://maddata.agency/mad-blog/chto-takoe-data-mining"
+    },
+    {
+        "Name": "Data Mining: что внутри / Хабр",
+        "Link": "https://habr.com/ru/post/95209/"
+    },
+    {
+        "Name": "Data Mining | Информация - НОУ ИНТУИТ",
+        "Link": "https://www.intuit.ru/studies/courses/6/6/info"
+    },
+    {
+        "Name": "Портал Data mining - statistica.ru",
+        "Link": "https://statistica.ru/local-portals/data-mining/"
+    },
+    {
+        "Name": "What is data mining? | SAS",
+        "Link": "https://www.sas.com/ru_ru/insights/analytics/data-mining.html"
+    },
+    {
+        "Name": "Data Mining Definition - Investopedia",
+        "Link": "https://www.investopedia.com/terms/d/datamining.asp"
+    },
+    {
+        "Name": "Технология Data mining, её применение и характеристики ...",
+        "Link": "https://iot.ru/wiki/data-mining"
+    },
+    {
+        "Name": "Что такое Data Mining? - itWeek",
+        "Link": "https://www.itweek.ru/idea/article/detail.php?ID=51482"
+    },
+    {
+        "Name": "Data Mining: Подробнее о STATISTICA Data Miner",
+        "Link": "http://statsoft.ru/products/STATISTICA_Data_Miner/data-mining-more.php"
+    },
+    {
+        "Name": "Data Mining примеры - STATISTICA",
+        "Link": "http://statsoft.ru/products/STATISTICA_Data_Miner/examples-of-data-mining.php"
+    },
+    {
+        "Name": "Data Mining #1 / Задачи Data Mining [Технострим] - YouTube",
+        "Link": "https://www.youtube.com/watch?v=z5CFef4SGnA"
+    },
+    {
+        "Name": "Что такое Data Mining? - YouTube",
+        "Link": "https://www.youtube.com/watch?v=G0nYAyFnBZs"
+    },
+    {
+        "Name": "Data Mining - Loginom Wiki",
+        "Link": "https://wiki.loginom.ru/articles/data-mining.html"
+    },
+    {
+        "Name": "Data Mining - Between Exchange",
+        "Link": "http://rtb-media.ru/wiki-data-mining/"
+    },
+    {
+        "Name": "Что такое Data Mining | Журнал ВРМ World | Пресс-центр ...",
+        "Link": "https://iso.ru/ru/press-center/journal/1948.phtml"
+    },
+    {
+        "Name": "data mining - Перевод на русский - примеры английский ...",
+        "Link": "https://context.reverso.net/%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/data+mining"
+    },
+    {
+        "Name": "Data mining | АНАЛИТИКА ПЛЮС",
+        "Link": "https://analytikaplus.ru/data-mining/"
+    },
+    {
+        "Name": "Добування даних — Вікіпедія",
+        "Link": "https://uk.wikipedia.org/wiki/%D0%94%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85"
+    },
+    {
+        "Name": "Data mining — Википедия",
+        "Link": "https://ru.wikipedia.org/wiki/Data_mining"
+    },
+    {
+        "Name": "Data Mining — добыча данных | BaseGroup Labs",
+        "Link": "https://basegroup.ru/community/articles/data-mining"
+    },
+    {
+        "Name": "Что такое data mining? - MAD Data",
+        "Link": "https://maddata.agency/mad-blog/chto-takoe-data-mining"
+    },
+    {
+        "Name": "Data Mining: что внутри / Хабр",
+        "Link": "https://habr.com/ru/post/95209/"
+    },
+    {
+        "Name": "Data Mining | Информация - НОУ ИНТУИТ",
+        "Link": "https://www.intuit.ru/studies/courses/6/6/info"
+    },
+    {
+        "Name": "Портал Data mining - statistica.ru",
+        "Link": "https://statistica.ru/local-portals/data-mining/"
+    },
+    {
+        "Name": "What is data mining? | SAS",
+        "Link": "https://www.sas.com/ru_ru/insights/analytics/data-mining.html"
+    },
+    {
+        "Name": "Data Mining Definition - Investopedia",
+        "Link": "https://www.investopedia.com/terms/d/datamining.asp"
+    },
+    {
+        "Name": "Технология Data mining, её применение и характеристики ...",
+        "Link": "https://iot.ru/wiki/data-mining"
     }
 ]
