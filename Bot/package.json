@@ -1,0 +1,18 @@
+{
+  "name": "lecture-20.02",
+  "version": "1.0.0",
+  "main": "lc1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botgram": "^2.2.0",
+    "express": "^4.17.1",
+    "node-telegram-bot-api": "^0.40.0",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
